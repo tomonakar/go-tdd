@@ -15,3 +15,6 @@ func TestSumAll(t *testing.T) {
     }
 }
 ```
+
+- [The Go Blog Go Slice](https://blog.golang.org/slices-intro)
+
