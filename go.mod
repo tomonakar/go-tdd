@@ -9,3 +9,5 @@ replace go-tdd/iteration => ./for
 replace go-tdd/arrays => ./arrays
 
 replace go-tdd/structs => ./structs
+
+replace go-tdd/pointers => ./pointers
