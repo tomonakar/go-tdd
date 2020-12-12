@@ -51,9 +51,12 @@ func TestArea2(t *testing.T) {
 	}
 
 	for _, tt := range areaTests {
-		got := tt.shape.Area()
-		if got != tt.hasArea {
-			t.Errorf("got %g want %g", got, tt.hasArea)
-		}
+		// using tt.name from the case to use it as the `t.Run` test` name
+		t.Run(tt.name, func(t *testing.T) {
+			got := tt.shape.Area()
+			if got != tt.hasArea {
+				t.Errorf("%v got %g want %g", tt.shape, got, tt.hasArea)
+			}
+		})
 	}
 }
