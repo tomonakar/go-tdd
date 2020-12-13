@@ -10,3 +10,11 @@ https://andmorefine.gitbook.io/learn-go-with-tests/
 ## Pointers
 - [ポインタの逆参照の仕様](https://golang.org/ref/spec#Method_values)
 
+## 未チェックのエラーを検出
+```go
+go get -u github.com/kisielk/errcheck
+```
+
+```sh
+errcheck .
+```
