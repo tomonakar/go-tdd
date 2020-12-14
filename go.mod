@@ -12,6 +12,8 @@ replace go-tdd/structs => ./structs
 
 replace go-tdd/pointers => ./pointers
 
+replace go-tdd/maps => ./maps
+
 require (
 	github.com/kisielk/errcheck v1.4.0 // indirect
 	golang.org/x/mod v0.4.0 // indirect
