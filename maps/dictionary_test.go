@@ -31,3 +31,18 @@ func assertError(t *testing.T, got, want error) {
 		t.Errorf("got %q want %q", got, want)
 	}
 }
+
+func TestAdd(t *testing.T) {
+	dictionary := Dictionary{}
+	dictionary.Add("test", "this is just a test")
+
+	want := "test is just a test"
+	got, err := dictionary.Search("test")
+	if err != nil {
+		t.Fatal("should find added word: ", err)
+	}
+
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
+}
