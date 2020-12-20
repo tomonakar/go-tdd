@@ -1,8 +1,8 @@
 package di
 
 import (
-	"bytes"
 	"fmt"
+	"io"
 )
 
 // この関数のテストは難しい
@@ -11,6 +11,6 @@ func GreetSample(name string) {
 	fmt.Printf("Hello, %s", name)
 }
 
-func Greet(writer *bytes.Buffer, name string) {
+func Greet(writer io.Writer, name string) {
 	fmt.Fprintf(writer, "Hello, %s", name)
 }
