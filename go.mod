@@ -16,6 +16,8 @@ replace go-tdd/maps => ./maps
 
 replace go-tdd/di => ./di
 
+replace go-tdd/concurrency => ./concurrency
+
 require (
 	github.com/kisielk/errcheck v1.4.0 // indirect
 	golang.org/x/mod v0.4.0 // indirect
