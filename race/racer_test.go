@@ -1,7 +1,6 @@
 package race
 
 import (
-	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -23,8 +22,6 @@ func TestRacer(t *testing.T) {
 
 	want := fastURL
 	got := Racer(slowURL, fastURL)
-
-	fmt.Println((want))
 
 	if got != want {
 		t.Errorf("got %q want %q", got, want)
