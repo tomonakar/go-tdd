@@ -1,6 +1,8 @@
 package reflect
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestWalk(t *testing.T) {
 	expected := "chris"
