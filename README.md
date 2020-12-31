@@ -57,3 +57,12 @@ var dictionary = make(map[string]string)
 - モックに関するこの投稿では、モックの一種であるスパイのみを取り上げました。 モックにはさまざまな種類があります。 ボブおじさんは非常に読みやすい記事でタイプについて説明しています。
 - [When to Mock](https://blog.cleancoder.com/uncle-bob/2014/05/10/WhenToMock.html)
 - [ボブおじさんの記事](https://blog.cleancoder.com/uncle-bob/2014/05/14/TheLittleMocker.html)
+
+## 11章 並行性
+- ベンチマークの実行 `go test -bench=.`
+- **blocking**: 通常、Go関数で `doSomething()`を呼び出すと関数が返されるのを待つ（返される値が無い場合でも、関数の終了を待つ）
+- [Make It Work Make It Right Make It Fast](http://wiki.c2.com/?MakeItWorkMakeItRightMakeItFast)
+- [早期最適化は諸悪の根元](http://wiki.c2.com/?PrematureOptimization)
+
+
+## 12章 Select
