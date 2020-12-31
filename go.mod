@@ -20,6 +20,8 @@ replace go-tdd/concurrency => ./concurrency
 
 replace go-tdd/race => ./race
 
+replace go-tdd/reflection => ./reflection
+
 require (
 	github.com/kisielk/errcheck v1.4.0 // indirect
 	golang.org/x/mod v0.4.0 // indirect
