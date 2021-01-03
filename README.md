@@ -69,3 +69,6 @@ var dictionary = make(map[string]string)
 - select
 - httptest
 
+## 13章 reflection
+- [The Laws of Reflection (go blog)](https://blog.golang.org/laws-of-reflection)
+
