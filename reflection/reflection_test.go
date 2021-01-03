@@ -16,7 +16,8 @@ func TestWalk(t *testing.T) {
 			struct {
 				Name string
 				City string
-			}{"Chris", "London"},
+				Age  int
+			}{"Chris", "London", 32},
 			[]string{"Chris", "London"},
 		},
 	}
