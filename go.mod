@@ -22,7 +22,7 @@ replace go-tdd/race => ./race
 
 replace go-tdd/reflection => ./reflection
 
-replace go-tdd/sync => ./sync
+replace go-tdd/syncp => ./sync
 
 require (
 	github.com/kisielk/errcheck v1.4.0 // indirect

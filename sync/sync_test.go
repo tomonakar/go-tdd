@@ -1,4 +1,4 @@
-package sync
+package syncp
 
 import (
 	"sync"
@@ -7,7 +7,7 @@ import (
 
 func TestCounter(t *testing.T) {
 	t.Run("incrementing the counter 3 times leaves it at 3", func(tt *testing.T) {
-		counter := Counter{0}
+		counter := Counter{value: 0}
 		counter.Inc()
 		counter.Inc()
 		counter.Inc()
