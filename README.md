@@ -80,3 +80,14 @@ var dictionary = make(map[string]string)
 - channelとmutexの使い分け https://github.com/golang/go/wiki/MutexOrChannel
 
 ## 15章 コンテキスト
+- [go blog context](https://blog.golang.org/context)
+- [context.Valueは使うべきではない](https://faiface.github.io/post/context-should-go-away-go2/)
+- [context.Valueは制御ではなく通知](https://medium.com/@cep21/how-to-correctly-use-context-context-in-go-1-7-8f2c0fafdf39)
+- [Go2ではコンテキストはなくなるはず](https://faiface.github.io/post/context-should-go-away-go2/)
+
+### 内容
+- リクエストがクライアントによってキャンセルされたHTTPハンドラをテストする方法。
+- キャンセルを管理するためのコンテキストの使用方法。
+- contextを受け入れ、それを使ってゴルーチン、select、およびチャネルを使用してそれ自体をキャンセルする関数の作成方法。
+- コールスタックを通じてリクエストスコープのコンテキストを伝播してキャンセルを管理する方法については、Googleのガイドラインに従ってください。
+- 必要に応じて、http.ResponseWriterの独自のスパイをロールする方法。
