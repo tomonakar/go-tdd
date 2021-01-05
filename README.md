@@ -72,3 +72,11 @@ var dictionary = make(map[string]string)
 ## 13章 reflection
 - [The Laws of Reflection (go blog)](https://blog.golang.org/laws-of-reflection)
 
+## 14章 同期
+- go vetでバグに関する警告を受け取れる
+- sync.Mutexは最初の使用後にコピーしてはならない https://golang.org/pkg/sync/#Mutex
+- Mutexを使用するとデータにロックを追加できる
+- Waitgroupはゴルーチンがジョブを完了するのを待つ
+- channelとmutexの使い分け https://github.com/golang/go/wiki/MutexOrChannel
+
+## 15章 コンテキスト
