@@ -26,6 +26,8 @@ replace go-tdd/syncp => ./sync
 
 replace go-tdd/contextp => ./context
 
+replace go-tdd/numeral => ./roman-numerals
+
 require (
 	github.com/kisielk/errcheck v1.4.0 // indirect
 	golang.org/x/mod v0.4.0 // indirect
