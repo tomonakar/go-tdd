@@ -24,6 +24,8 @@ replace go-tdd/reflection => ./reflection
 
 replace go-tdd/syncp => ./sync
 
+replace go-tdd/contextp => ./context
+
 require (
 	github.com/kisielk/errcheck v1.4.0 // indirect
 	golang.org/x/mod v0.4.0 // indirect
