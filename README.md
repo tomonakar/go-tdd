@@ -99,3 +99,7 @@ var dictionary = make(map[string]string)
   - このテストの本質は、ドメインをよく理解してこれらのプロパティを記述できるようにすること
 
 ## 17章 数学
+- [Cos](https://golang.org/pkg/math/#Cos)
+  - Cosはラジアン引数xの余弦を返す
+    - ラジアン： 360度 = 2πラジアン （[rad])
+
