@@ -102,4 +102,17 @@ var dictionary = make(map[string]string)
 - [Cos](https://golang.org/pkg/math/#Cos)
   - Cosはラジアン引数xの余弦を返す
     - ラジアン： 360度 = 2πラジアン （[rad])
+- [不動小数点演算の不正確さ](https://0.30000000000000004.com/)
+  - しかし、分割して乗算しないようにするだけで精度を保てる
 
+```go
+// NG
+numberOfSeconds * π　/ 30
+
+// OK
+π / (30 / numberOfSeconds)
+```
+- [XML構造体の自動生成 zek](https://github.com/miku/zek)
+  - [オンラインバージョン](https://www.onlinetool.io/xmltogo/)
+
+- mathTest/clockface内で `go build` を実行しSVGを出力
