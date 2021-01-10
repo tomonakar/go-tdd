@@ -10,13 +10,17 @@ type Point struct {
 	Y float64
 }
 
+const secondHandLength = 90
+const clockCenterX = 150
+const clockCenterY = 150
+
 // SecondHand is the unit vector of the second hand of an analogue clock at time `t`
 // represented as a Point.
 func SecondHand(t time.Time) Point {
 	p := secondHandPoint(t)
-	p = Point{p.X * 90, p.Y * 90}   // scale: SVGの時計の長さに合わせる
-	p = Point{p.X, -p.Y}            // flip: 12時をスタート地点にするため、X軸上で反転させる
-	p = Point{p.X + 150, p.Y + 150} // translate: 正しい位置に移動
+	p = Point{p.X * secondHandLength, p.Y * secondHandLength} // scale: SVGの時計の長さに合わせる
+	p = Point{p.X, -p.Y}                                      // flip: 12時をスタート地点にするため、X軸上で反転させる
+	p = Point{p.X + clockCenterX, p.Y + clockCenterY}         // translate: 座標の中心点を時計の中心に変換
 	return p
 }
 
