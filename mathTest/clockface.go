@@ -35,7 +35,7 @@ func SecondHand(w io.Writer, t time.Time) {
 	p = Point{p.X * secondHandLength, p.Y * secondHandLength} // scale: SVGの時計の長さに合わせる
 	p = Point{p.X, -p.Y}                                      // flip: 12時をスタート地点にするため、X軸上で反転させる
 	p = Point{p.X + clockCenterX, p.Y + clockCenterY}         // translate: 座標の中心点を時計の中心に変換
-	fmt.Fprintf(w, `<line x1="150" y1="150" x2="%f" y2="%f" style="fill:none;stroke:#f00;stroke-width:3px;"/>`, p.X, p.Y)
+	fmt.Fprintf(w, `<line x1="150" y1="150" x2="%.3f" y2="%.3f" style="fill:none;stroke:#f00;stroke-width:3px;"/>`, p.X, p.Y)
 }
 
 const svgStart = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
