@@ -33,6 +33,7 @@ func TestSecondHandVector(t *testing.T) {
 		point Point
 	}{
 		{simpleTime(0, 0, 30), Point{0, -1}},
+		{simpleTime(0, 0, 40), Point{-1, 0}},
 	}
 
 	for _, c := range cases {
