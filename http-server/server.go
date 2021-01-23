@@ -30,6 +30,3 @@ func GetPlayerScore(name string) string {
 
 	return ""
 }
-
-// ここから
-// https://andmorefine.gitbook.io/learn-go-with-tests/build-an-application/http-server#rifakutaringu
