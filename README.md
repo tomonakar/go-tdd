@@ -118,7 +118,14 @@ numberOfSeconds * π　/ 30
 - mathTest/clockface内で `go build` を実行しSVGを出力
 
 
-## 18章 HTTPサーバー
+## 18章 HTTPサーバー
 - [ListenAndServe](https://golang.org/pkg/net/http/#ListenAndServe)
 -[HandlerFunc](https://golang.org/pkg/net/http/#HandlerFunc)
 
+## 19章 JSON、ルーティング、embedded
+- [effective go: embedding](https://golang.org/doc/effective_go.html#embedding)
+- JSON文字列のテストをする場合の問題点
+  - テストが脆くなる（データモデルを変更するたびにテストが失敗する）
+  - デバックが難しい（2つのJSON文字列を比較する時に実際の問題が何なのか理解するのが難しい場合がある）
+  - 出力はJSONである必要はあるが、重要なのは出力のエンコード方法ではなく、出力結果である
+  - 標準ライブラリの再テストになってしまう。標準ライブラリはすでにテスト済みであり、他の人のコードをテストする必要は無い
